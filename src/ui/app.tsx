@@ -3,6 +3,7 @@ import { UI_CHANNEL } from "@ui/app.network";
 import { Button } from "@ui/components/Button";
 import { Networker, NetworkError } from "monorepo-networker";
 import { useEffect, useState } from "react";
+import { getAllComponentSets } from "./utils/figma-utils";
 
 import "./styles.css";
 
@@ -19,6 +20,10 @@ function App() {
   return (
     <div className="homepage">
       <h1>Figma + Vite + React</h1>
+
+      <select id="componentDropdown">
+        <option value="">(Loading...)</option>
+      </select>
 
       <div className="card">
         <Button onClick={() => setCount((count) => count + 1)}>
@@ -65,6 +70,8 @@ function App() {
           Edit <code>src/app.tsx</code> and save to test HMR
         </p>
       </div>
+
+
     </div>
   );
 }

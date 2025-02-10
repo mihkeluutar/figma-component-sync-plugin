@@ -5,19 +5,11 @@ import { Networker } from "monorepo-networker";
 async function bootstrap() {
   Networker.initialize(PLUGIN, PLUGIN_CHANNEL);
 
-  if (figma.editorType === "figma") {
-    figma.showUI(__html__, {
-      width: 800,
-      height: 650,
-      title: "My Figma Plugin!",
-    });
-  } else if (figma.editorType === "figjam") {
-    figma.showUI(__html__, {
-      width: 800,
-      height: 650,
-      title: "My FigJam Plugin!",
-    });
-  }
+  figma.showUI(__html__, {
+    width: 800,
+    height: 600,
+    title: "My Figma Plugin!",
+  });
 
   console.log("Bootstrapped @", Networker.getCurrentSide().name);
 
