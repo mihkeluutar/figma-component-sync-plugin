@@ -2,32 +2,11 @@
 <p align="center">
   <img src="https://raw.githubusercontent.com/CoconutGoodie/figma-plugin-react-vite/master/.github/assets/logo.png" height="100px" alt="Logo"/>
 </p>
-<h1 align="center">Figma Plugin Boilerplate: React + Vite</h1>
+<h1 align="center"></h1>
 
 <!-- Slogan -->
 <p align="center">
    Create scalable Figma plugins with ease, using the power of React + Vite!
-</p>
-
-<!-- Badges -->
-<p align="center">
-
-  <!-- Github Badges -->
-  <img src="https://raw.githubusercontent.com/TheSpawnProject/TheSpawnLanguage/master/.github/assets/github-badge.png" height="20px"/>
-  <a href="https://github.com/CoconutGoodie/figma-plugin-react-vite/commits/master">
-    <img src="https://img.shields.io/github/last-commit/CoconutGoodie/figma-plugin-react-vite"/>
-  </a>
-  <a href="https://github.com/CoconutGoodie/figma-plugin-react-vite/issues">
-    <img src="https://img.shields.io/github/issues/CoconutGoodie/figma-plugin-react-vite"/>
-  </a>
-
-  <br/>
-
-  <!-- Support Badges -->
-  <img src="https://raw.githubusercontent.com/TheSpawnProject/TheSpawnLanguage/master/.github/assets/support-badge.png" height="20px"/>
-  <a href="https://www.patreon.com/iGoodie">
-    <img src="https://img.shields.io/endpoint.svg?url=https%3A%2F%2Fshieldsio-patreon.vercel.app%2Fapi%3Fusername%3DiGoodie%26type%3Dpatrons"/>
-  </a>
 </p>
 
 # 🗝 Key Features
@@ -44,7 +23,7 @@
 
 6. **_Sassy:_** A classic, this boilerplate supports Sass/Scss/Less and modules! Check out `/src/ui/styles/` for 7-1 Sass Template and `/src/ui/components/Button.module.scss` for module examples.
 
-# 💻 How to start coding?
+# 💻 How to run this plugin?
 
 1. First thing after you clone should be to install the dependencies by executing:
 
@@ -107,34 +86,3 @@ After building, built `dist` folder is going to contain every artifact you need 
   - `scripts/windows/` : Potential custom Windows OS scripts
   - `scripts/macos/` : Potential custom Mac OS scripts
 - `figma.manifest.ts` - A module that exports [Figma Plugin Manifest](https://www.figma.com/plugin-docs/manifest/) for the build scripts
-
-# 🛑 Caveats
-
-### 1. Make sure to import SVGS as either component, url or raw!
-
-Importing image assets other than `.svg` is easy. However, when you are importing `.svg`, by default it will load as a base64 data-uri, to import as a React component, you must add the query string `?component`.
-
-```tsx
-import MyImage from "@ui/assets/my_image.svg?component"; // <MyImage />
-import myImage from "@ui/assets/my_image.svg?url"; // "data:svg+xml,..."
-import myImageRaw from "@ui/assets/my_image.svg?raw"; // "<svg>...</svg>"
-...
-
-<MyImage className="something" />
-<img src={myImage} />
-<div dangerouslySetInnerHTML={{ __html: myImageRaw }} />
-```
-
----
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/CoconutGoodie/figma-plugin-react-vite/master/.github/assets/preview.png" alt="Preview" />
-</p>
-
-# 📜 License of the Template
-
-&copy; 2024 Taha Anılcan Metinyurt (iGoodie)
-
-For any part of this work for which the license is applicable, this work is licensed under the [Attribution-ShareAlike 4.0 International](http://creativecommons.org/licenses/by-sa/4.0/) license. (See LICENSE).
-
-<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
