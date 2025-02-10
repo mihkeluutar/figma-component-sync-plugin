@@ -4,7 +4,7 @@ import { Button } from "@ui/components/Button";
 import { Networker, NetworkError } from "monorepo-networker";
 import { useEffect, useState } from "react";
 
-import "@ui/styles/main.scss";
+import "./styles.css";
 
 function App() {
   const [count, setCount] = useState(0);
