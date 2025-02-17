@@ -22,18 +22,6 @@ function App() {
 
   return (
     <div className="homepage">
-      <div>
-        <a href="https://www.figma.com" target="_blank">
-          <img src={figmaLogo} className="logo figma" alt="Figma logo" />
-        </a>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo vite" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <ReactLogo className="logo react" title="React logo" />
-        </a>
-      </div>
-
       <h1>Figma + Vite + React</h1>
 
       <div className="card">

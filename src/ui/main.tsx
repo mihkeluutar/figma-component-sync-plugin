@@ -9,7 +9,7 @@ async function bootstrap() {
 
   UI_CHANNEL.emit(PLUGIN, "hello", ["Hey there, Figma!"]);
 
-  const App = (await import("./app")).default;
+  const App = (await import("./App")).default;
 
   const rootElement = document.getElementById("root") as HTMLElement;
   const root = ReactDOM.createRoot(rootElement);
